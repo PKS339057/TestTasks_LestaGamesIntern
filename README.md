@@ -60,6 +60,9 @@ def isEven(value):
 В первом классе циклический буфер реализован с помощью массива. Код для реализации класса лежит в файле
 [array_circular_fifo.py](https://github.com/PKS339057/TestTasks_LestaGamesIntern/tree/main/Tasks/Task%202/array_circular_fifo.py)
 
+Во втором классе циклический буфер реализован с помощью односвязного списка. Код для реализации класса лежит в файле
+[linked_list_circular_fifo.py](https://github.com/PKS339057/TestTasks_LestaGamesIntern/tree/main/Tasks/Task%202/linked_list_circular_fifo.py)
+
 Ссылка на исходный код:
 
 
