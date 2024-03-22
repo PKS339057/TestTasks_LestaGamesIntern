@@ -2,11 +2,9 @@ from ICircularFIFO import ICircularFIFO
 
 
 class Node:
-    def __init__(self, val, nxt=None, is_front=False, is_rear=False):
+    def __init__(self, val, nxt=None):
         self.val = val
         self.nxt = nxt
-        self.is_front = is_front
-        self.is_rear = is_rear
 
 
 class LinkedListCircularFIFO(ICircularFIFO):
