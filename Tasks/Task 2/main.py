@@ -32,7 +32,6 @@ def test(c_fifo: ICircularFIFO) -> None:
 def __print_result(c_fifo: ICircularFIFO):
     print("Текущее состояние: ", end="")
     c_fifo.print_buffer()
-    print(f"Первый элемент: {c_fifo.front()}, последний элемент: {c_fifo.rear()}")
 
 
 def __print_line():

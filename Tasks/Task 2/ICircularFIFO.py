@@ -3,14 +3,6 @@ from abc import ABC, abstractmethod
 
 class ICircularFIFO(ABC):
     @abstractmethod
-    def front(self) -> int:
-        pass
-
-    @abstractmethod
-    def rear(self) -> int:
-        pass
-
-    @abstractmethod
     def enqueue(self, value: object) -> bool:
         pass
 

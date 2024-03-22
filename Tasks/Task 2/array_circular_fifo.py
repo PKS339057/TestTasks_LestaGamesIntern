@@ -10,16 +10,6 @@ class ArrayCircularFIFO(ICircularFIFO):
         self.front_idx = 0
         self.rear_idx = -1
 
-    def front(self) -> int:
-        if self.is_empty():
-            return -1
-        return self.buffer[self.front_idx]
-
-    def rear(self) -> int:
-        if self.is_empty():
-            return -1
-        return self.buffer[self.rear_idx]
-
     def enqueue(self, value: object) -> bool:
         if self.is_full():
             return False

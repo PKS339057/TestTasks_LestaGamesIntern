@@ -27,16 +27,6 @@ class LinkedListCircularFIFO(ICircularFIFO):
             nodes = nodes.nxt
         nodes.nxt = Node(None, nxt=first_node)
 
-    def front(self) -> int:
-        if self.is_empty():
-            return -1
-        return self.front_node.val
-
-    def rear(self) -> int:
-        if self.is_empty():
-            return -1
-        return self.rear_node.val
-
     def enqueue(self, value: object) -> bool:
         if self.is_full():
             return False
