@@ -9,15 +9,3 @@ class ICircularFIFO(ABC):
     @abstractmethod
     def dequeue(self) -> bool:
         pass
-
-    @abstractmethod
-    def is_empty(self) -> bool:
-        pass
-
-    @abstractmethod
-    def is_full(self) -> bool:
-        pass
-
-    @abstractmethod
-    def print_buffer(self) -> None:
-        pass

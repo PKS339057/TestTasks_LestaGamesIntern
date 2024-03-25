@@ -13,9 +13,8 @@ class LinkedListCircularFIFO(ICircularFIFO):
         self.filled_counter = 0
         self.front_node = None
         self.rear_node = None
-        self.__set_nodes()
 
-    def __set_nodes(self):
+        # Создание связного списка в памяти
         first_node = Node(None)
         self.front_node = first_node
         self.rear_node = self.front_node
@@ -35,24 +34,10 @@ class LinkedListCircularFIFO(ICircularFIFO):
         return True
 
     def dequeue(self) -> bool:
-        if self.is_empty():
+        if self.filled_counter == 0:
             return False
         self.front_node.val = None
         if self.filled_counter > 1:
             self.front_node = self.front_node.nxt
         self.filled_counter -= 1
         return True
-
-    def is_empty(self) -> bool:
-        return self.filled_counter == 0
-
-    def is_full(self) -> bool:
-        return self.filled_counter == self.size
-
-    def print_buffer(self) -> None:
-        result = []
-        cur_node = self.front_node
-        for _ in range(self.filled_counter):
-            result.append(cur_node.val)
-            cur_node = cur_node.nxt
-        print(result)
